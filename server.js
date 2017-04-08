@@ -12,7 +12,12 @@ app.use(function (req, res ,next){
     console.log(req.headers);
 
     res.writeHead(200,{'Content-Type': 'text/html'});
-    x
+    
 
 })
 
+var server = http.createServer(app);
+
+server.listen(port, hostname, function(){
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

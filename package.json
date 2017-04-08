@@ -1,0 +1,23 @@
+{
+  "name": "expone",
+  "version": "1.0.0",
+  "description": "mmmnmmm",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhayworld123/practice.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhayworld123/practice/issues"
+  },
+  "homepage": "https://github.com/abhayworld123/practice#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
