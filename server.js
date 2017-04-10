@@ -1,20 +1,17 @@
 var express = require('express'),
-http = require('http');
+     http = require('http');
 
-var path = require('path');
-var fs = require('fs');
+var hostname = 'localhost';
+var port = 3000;
 
-var server= "localhost";
-var port = 3000; 
+var app = express();
 
-var app = express;
-app.use(function (req, res ,next){
-    console.log(req.headers);
+app.use(function (req, res, next) {
+  console.log(req.headers);
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.end('<html><body><h1>Hello World</h1></body></html>');
 
-    res.writeHead(200,{'Content-Type': 'text/html'});
-    
-
-})
+});
 
 var server = http.createServer(app);
 
